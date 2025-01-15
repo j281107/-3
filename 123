@@ -1,0 +1,35 @@
+10.#include "iostream"
+using namespace std;
+
+int main() {
+    setlocale(LC_CTYPE, "rus");
+    int h, a, w;
+    cout << "Введите высоту шахматной доски.\nh = ";
+    cin >> h;
+    cout << "Введите ширину шахматной доски.\nw = ";
+    cin >> w;
+    cout << "Введите величину ячейки шахматной доски.\na = ";
+    cin >> a;
+    for (int i = 0; i < h; i++)     
+    {
+        if (i % 2 == 0)
+            for (int i = 0; i < w/2; i++)     
+            {
+                for (int i = 0; i < a; i++)
+                    cout << "*";
+                for (int i = 0; i < a; i++)
+                    cout << "-";
+            }
+        else 
+            for (int i = 0; i < w/2; i++)     
+            {
+                for (int i = 0; i < a; i++)
+                    cout << "-";
+                for (int i = 0; i < a; i++)
+                    cout << "*";
+            }
+        cout << "\n";
+    }
+    cout << "\n\n";
+    return 0;
+}
