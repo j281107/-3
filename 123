@@ -4,6 +4,7 @@ using namespace std;
 int main() 
 {
     setlocale(LC_CTYPE, "rus");
+    cout << "ДЗ 1\n\n";
     int s;
     int R;
     do
@@ -88,6 +89,7 @@ using namespace std;
 int main() 
 {
     setlocale(LC_CTYPE, "rus");
+    cout << "ДЗ 2\n\n";
     int k =0;
     int i1,i2,i3;
     for(int i = 100;i<=999;i++)
@@ -111,6 +113,7 @@ using namespace std;
 int main() 
 {
     setlocale(LC_CTYPE, "rus");
+    cout << "ДЗ 3\n\n";
     int n1 = 0, n2 = 0, n3 = 0;
  
     int count = 0;
@@ -137,6 +140,7 @@ using namespace std;
 int main() 
 {
     setlocale(LC_CTYPE, "rus");
+    cout << "ДЗ 4\n\n";
     int a, res;
     double sum = 0;
     int k = 0;
@@ -156,6 +160,50 @@ int main()
     return 0;
 }
 
+5.#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_CTYPE, "rus");
+    cout << "ДЗ 5\n\n";
+    int A, B;
+    cout << "Пожалуйста, введите свой номер::\n";
+    cin >> A;
+    for (int i = A - 1; i > 1; i--) 
+    {
+        B = i;
+        if ((A % (B * B) == 0) &&  (A % (B * B * B) != 0)) 
+        {
+            cout << B << "\n";
+        }
+    }
+    return 0;
+}
+
+6.#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    cout << "ДЗ 6\n\n";
+    int A, A1, sum = 0;
+    cout << "A="; cin >> A;
+    if (A < 0) A = -A;
+    A1 = A;
+    while (A > 0)
+    {
+        sum += A % 10;
+        A /= 10;
+    }
+    if (sum * sum * sum == A1 * A1) cout << "ДА\n";
+    else cout << "НЕТ\n";
+    return 0;
+}
+
 
 10.#include "iostream"
 using namespace std;
@@ -163,6 +211,7 @@ using namespace std;
 int main() 
 {
     setlocale(LC_CTYPE, "rus");
+    cout << "ДЗ 10\n\n";
     int h, a, w;
     cout << "Введите высоту шахматной доски.\nh = ";
     cin >> h;
