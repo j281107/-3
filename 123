@@ -204,6 +204,25 @@ int main()
     return 0;
 }
 
+7.#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    cout << "ДЗ 7\n\n";
+  
+    int num;
+    cout << "Введите число";
+    cin >> num;
+    for (int i = 1; i < num; i++)
+    {
+        if (num % i == 0)
+            cout << i << endl;
+    }
+    return 0;
+}
 
 10.#include "iostream"
 using namespace std;
