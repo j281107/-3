@@ -224,6 +224,65 @@ int main()
     return 0;
 }
 
+8.#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    cout << "ДЗ 8\n\n";
+  
+    cout << "Введите два целых числа\n";
+    
+    int a, b, с;
+    cin >> a >> b;
+    if (a > b)
+        с = a;
+    else
+        с = b;
+    for (int i = 1;i <= с; i++)
+        if (a % i == 0 && b % i == 0)
+            cout << i << endl;
+    return 0;
+}
+
+9.#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Rus");
+    cout << "ДЗ 9\n\n";
+  
+    int a, cp, n = 0, sum = 0, c = 0;
+ 
+    cout << "Number:";
+    cin >> a;
+    cp = a;
+
+ 
+    while (a)
+    {
+        if (a % 10 == 0)
+            c++;
+        a /= 10;
+    }
+    cout << "\nКол-во нулей: " << c;
+
+    
+    for (n = 0; cp > 0; n++)
+    {
+        sum += cp % 10;
+        cp /= 10;
+    }
+    cout << "\nКол-во цифр = " << n << " \nSum = " << sum << "\nСреднее ариф = " << (double)sum / n << "\n";
+
+    
+    return 0;
+}
+
 10.#include "iostream"
 using namespace std;
 
