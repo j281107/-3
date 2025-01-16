@@ -79,6 +79,9 @@ cout<<R"(         _______     _______     _______     _______     _______
     
     return 0;
 }
+
+
+
 2.#include "iostream"
 using namespace std;
 
@@ -99,6 +102,9 @@ int main()
     
     return 0;
 }
+
+
+
 3.#include "iostream"
 using namespace std;
 
@@ -123,10 +129,13 @@ int main()
     
     return 0;
 }
+
+
 4.#include "iostream"
 using namespace std;
 
-int main() {
+int main() 
+{
     setlocale(LC_CTYPE, "rus");
     int a, res;
     double sum = 0;
@@ -146,10 +155,13 @@ int main() {
     cout << "Число без 3 и 6: " << sum;
     return 0;
 }
+
+
 10.#include "iostream"
 using namespace std;
 
-int main() {
+int main() 
+{
     setlocale(LC_CTYPE, "rus");
     int h, a, w;
     cout << "Введите высоту шахматной доски.\nh = ";
